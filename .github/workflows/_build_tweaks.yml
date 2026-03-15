@@ -180,7 +180,7 @@ jobs:
           cd YTABConfig && make clean package DEBUG=0 FINALPACKAGE=1
           mv packages/*.deb ../ytabc.deb
 
-       - name: Build YouGroupSettings
+      - name: Build YouGroupSettings
         if: ${{ inputs.enable_demc }}
         run: |
           cd YouGroupSettings && make clean package DEBUG=0 FINALPACKAGE=1
